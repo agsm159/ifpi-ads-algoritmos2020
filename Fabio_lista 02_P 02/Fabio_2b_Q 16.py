@@ -61,15 +61,15 @@ def pagamento(tipo, quant, cartao ):
                 print('Valor do desconto:     5 %')
                 print(f'Valor a pagar:        R${novo_total:.2f}')
 
-        elif tipo == 'A':
-            if quant <= 5:
-                if cartao == 'N':
-                    total = quant * 5.9
-                    print(f'Tipo:     Alcatra ----- {quant} Kg')
-                    print(f'Preço total:          R${total:.2f}')
-                    print(f'Tipo de pagametno:    Á vista')
-                    print('Valor do desconto:     Insento')
-                    print(f'Valor a pagar:        R${total:.2f}')
+    elif tipo == 'A':
+        if quant <= 5:
+            if cartao == 'N':
+                total = quant * 5.9
+                print(f'Tipo:     Alcatra ----- {quant} Kg')
+                print(f'Preço total:          R${total:.2f}')
+                print(f'Tipo de pagametno:    Á vista')
+                print('Valor do desconto:     Insento')
+                print(f'Valor a pagar:        R${total:.2f}')
             elif cartao == 'S':
                 total = quant * 5.9
                 desconto = total * 5 / 100
